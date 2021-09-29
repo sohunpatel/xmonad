@@ -1,0 +1,25 @@
+@import "colors.rasi"
+
+* {
+    transparency:                   "real";
+    background-color:               @background;
+    text-color:                     @foreground;
+    font:            				"JetBrainsMono Nerd Font 10";
+}
+
+#window {
+	border:							1px;
+    border-radius:                  10px;
+    border-color:					@selected;
+    width:      					240px;
+    x-offset:             0;
+    y-offset: 						-4%;
+    padding:    					20px;
+    location:             center;
+}
+
+#entry {
+    expand: 						true;
+    width: 							150px;
+    text-color:						@selected;
+}
