@@ -63,7 +63,7 @@ myClickJustFocuses      = False
 myBorderWidth           = 1
 
 -- Border colors for focused & unfocused windows
-myFocusedBorderColor    = "#8FBCBB"
+myFocusedBorderColor    = "#bd93f9"
 myNormalBorderColor     = "#ECEFF4"
 
 -- modMask : modkey you want to use
@@ -87,7 +87,7 @@ myKeys conf@(XConfig {XMonad.modMask = super}) = M.fromList $
     , ((super, xK_f), web_browser)
 
     -- launch rofi menus
-    , ((mod1Mask,                 xK_F1),     rofi_launcher)
+    , ((mod1Mask,                 xK_space),     rofi_launcher)
     , ((super,                    xK_n),      rofi_network_menu)
     , ((super,                    xK_x),      rofi_powermenu)
     , ((mod1Mask .|. controlMask, xK_m),      rofi_mpd)
